@@ -5,6 +5,14 @@ const server = express();
 server.use(express.json())
 server.use(cors())
 
+server.get('/', (req, res) => {
+    res.json({ message: 'Web 45 is awesome!' })
+  })
+
+server.get('/api/users', (req,res) => {
+    res.status(200).json([{id:1, name:'Mike'}])
+})
+
 server.get('/api/users', (req,res) => {
     res.status(200).json([{id:1, name:'Mike'}])
 })
