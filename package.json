@@ -4,7 +4,9 @@
   "description": "In this challenge, you will build a simple Express app and deploy it to Heroku.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,8 @@
   },
   "homepage": "https://github.com/MikeLikesCode/node-api4-project#readme",
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.12"
   },
   "dependencies": {
     "cors": "^2.8.5",
